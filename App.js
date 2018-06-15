@@ -37,7 +37,7 @@ export default class App extends React.Component {
 				});
 			} catch (e) {
 				this.setState({
-					lodaing: false,
+					loading: false,
 					error: true,
 				});
 			}
