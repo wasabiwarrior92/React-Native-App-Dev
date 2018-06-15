@@ -29,7 +29,7 @@ export default class SearchInput extends React.Component {
 			<View style = {styles.container}>
 				<TextInput
 					autoCorrect = {false}
-					value={text}
+					value = { text }
  					placeholder = {placeholder}
 					placeholderTextColor = "white"
 					underlineColorAndroid = "transparent"
