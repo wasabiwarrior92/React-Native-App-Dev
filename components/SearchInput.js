@@ -12,6 +12,16 @@ export default class SearchInput extends React.Component {
 		this.setState({ text });
 	};
 
+	handleSubmitEditing = () =>{
+		const { onSubmit } = this.props;
+		const { text } = this.state;
+
+		if(!text) return;
+
+		onSubmit(text);
+		this.setState({text: ''});
+	}
+
 	render() {
 		const { placeholder } = this.props;
 		const { text } = this.state;
@@ -36,7 +46,7 @@ export default class SearchInput extends React.Component {
 const styles = StyleSheet.create({
  	container: {
  		height: 40,
- 		width: 200,
+ 		width: 250,
  		marginTop: 20,
  		backgroundColor: '#666',
  		marginHorizontal: 40,
