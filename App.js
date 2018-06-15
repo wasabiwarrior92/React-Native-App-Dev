@@ -82,6 +82,7 @@ export default class App extends React.Component {
 									onSubmit={this.handleUpdateLocation}
 								/>
 							</View>
+						)}
 					</View>
 				</ImageBackground>
 			</KeyboardAvoidingView>
